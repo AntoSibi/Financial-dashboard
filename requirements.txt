@@ -1,1 +1,8 @@
 numpy
+pandas
+matplotlib.pyplot
+plotly.graph_objects
+from datetime import datetime, timedelta
+yfinance
+streamlit
+from plotly.subplots import make_subplots
