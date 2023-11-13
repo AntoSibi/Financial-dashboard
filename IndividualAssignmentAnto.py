@@ -122,9 +122,7 @@ def render_header():
     
     # Add dashboard title and description
     st.title("MY FINANCIAL DASHBOARD ⭐")
-    col1, col2 = st.columns([1,5])
-    col1.write("Data source:")
-    col2.image('./img/yahoo_finance.png', width=100)
+
     
     # Add the ticker selection on the sidebar
     # Get the list of stock tickers from S&P500
@@ -158,8 +156,8 @@ def render_tab1():
     end_date = col3.date_input("End date", datetime.today().date())
     
     # Display stock image
-    col1, col2, col3 = st.columns([1, 3, 1])
-    col2.image('./img/stock_market.jpg', use_column_width=True, caption='Company Stock Information')
+    col1 = st.columns([1, 3, 1])
+   
     
     # Function to get company information from Yahoo Finance
     @st.cache_data
